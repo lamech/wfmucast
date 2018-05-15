@@ -28,7 +28,8 @@ foreach (@$items) {
 
     # WFMU doesn't publish a direct link to the archived mp3 in their archive
     # RSS; instead they publish a URL whose content, when retrieved, is the URL
-    # of the mp3 file; so, we go get it and insert it into the item.
+    # of the mp3 file (plus a bogus newline; so, we go get it and insert it into
+    # the item.
 
     my $mp3url = get($_->{link});
     chomp $mp3url;

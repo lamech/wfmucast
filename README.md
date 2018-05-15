@@ -27,4 +27,6 @@ https://masonbook.houseabsolute.com/book/ will get you started.
 
 **Next Steps**
 
-Redo the whole thing in something more respectably modern (Node.js?), with proper tests.
+Redo the whole thing in something more respectably modern (Node.js?), with
+proper tests, so that when WFMU does eventually break it, I notice and/or can
+figure out how to fix it.

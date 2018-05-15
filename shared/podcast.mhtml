@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?> <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+<channel>
+<language>en-ca</language>
+<title><% $title |h %></title>
+<description><% $description |h %></description>
+<itunes:category text="<% $category %>" />
+<itunes:summary><% $summary |h %></itunes:summary>
+<!-- items -->
+% foreach (@items) {
+    <item>
+        <title><% $_->{title} |h %></title>
+        <guid><% $_->{url} %></guid>
+        <description><% $_->{description} |h %> </description>
+        <pubDate><% $_->{pubDate} %></pubDate>
+        <enclosure url="<% $_->{link} %>" type="audio/mpeg" />
+    </item>
+% }
+</channel>
+</rss>
+
+<%args>
+$title
+$description
+$category
+$summary
+@items
+</%args>
+
+<%doc>
+wfmucast, version 1.0
+
+Copyright 2008 Dan Friedman.  This component is free software; you can
+redistribute it and/or modify it under the same terms as Perl itself.
+</%doc>

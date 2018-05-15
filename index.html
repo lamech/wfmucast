@@ -1,0 +1,36 @@
+<& /shared/podcast.mhtml,
+    title => $data->{channel}->{title},
+    description => $data->{channel}->{description},
+    category => 'wfmu',
+    summary => $data->{channel}->{description},
+    items => $items 
+&>
+
+<%init>
+
+use LWP::Simple;
+use XML::Simple;
+
+my $show = $ENV{QUERY_STRING};
+
+unless ($show =~ /^\w\w$/) {
+    die "Not a valid wfmu show code (two letters).";
+}
+
+my $data = XMLin(get("http://wfmu.org/archivefeed/mp3/$show.xml"));
+my $items = $data->{channel}->{item};
+
+foreach (@$items) {
+    my $mp3url = get($_->{link});
+    chomp $mp3url;
+    $_->{link} = $mp3url;
+}
+
+</%init>
+
+<%doc>
+wfmucast, version 1.0
+
+Copyright 2008 Dan Friedman.  This component is free software; you can
+redistribute it and/or modify it under the same terms as Perl itself.
+</%doc>

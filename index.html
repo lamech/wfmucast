@@ -14,16 +14,26 @@ use XML::Simple;
 my $show = $ENV{QUERY_STRING};
 
 unless ($show =~ /^\w\w$/) {
-    die "Not a valid wfmu show code (two letters).";
+    die "Not a valid WFMU show code (two letters).";
+
+    # If the user uses a show code that is two letters long but not a valid
+    # WFMU show code, we'll die anyway with a 500 error of some kind
+
 }
 
 my $data = XMLin(get("http://wfmu.org/archivefeed/mp3/$show.xml"));
 my $items = $data->{channel}->{item};
 
 foreach (@$items) {
+
+    # WFMU doesn't publish a direct link to the archived mp3 in their archive
+    # RSS; instead they publish a URL whose content, when retrieved, is the URL
+    # of the mp3 file; so, we go get it and insert it into the item.
+
     my $mp3url = get($_->{link});
     chomp $mp3url;
     $_->{link} = $mp3url;
+
 }
 
 </%init>

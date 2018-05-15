@@ -8,7 +8,7 @@ I wanted to be able to use iTunes (this will also work with other podcatchers) t
 
 * Run this code somewhere; e.g. http://example.com/wfmucast
 * Choose a show to receive regularly as a podcast from http://www.wfmu.org/table; for example, This Is The Modern World.
-* Note the two-letter code used for the show--you can see it by clicking through to the playlist archive for the show; in our example, for Downtown Soulville, the code is SV (http://www.wfmu.org/playlists/LM).
+* Note the two-letter code used for the show--you can see it by clicking through to the playlist archive for the show; in our example, for This Is The Modern World, the code is LM (http://www.wfmu.org/playlists/LM).
 * In your podcatcher, enter the podcast URL as http://example.com/wfmucast?LM
 * You should now be subscribed to This Is The Modern World, receiving new episodes when they are archived.
 

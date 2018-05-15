@@ -1,2 +1,2 @@
 # wfmucast
-Make WFMU archive visible as a podcast.
+Make WFMU archives visible as podcasts.

@@ -6,8 +6,7 @@ I wanted to be able to use iTunes to automatically download recent archives of
 my favourite shows for offline listening (this will also work with other
 podcatchers). I realized that they publish RSS feeds for the archives; and
 thus, the XML from their RSS feeds could be transformed into the XML for a
-podcast using a simple web app (HTML::Mason was my then-favourite web app
-development tool).
+podcast using a simple web app.
 
 **Here's how it works:**
 
@@ -20,8 +19,8 @@ development tool).
 
 **Notes**
 
-This assumes you know how to set up HTML::Mason ("an elegant weapon, for a more
-civilised age"). If you don't, Google, CPAN, or
+This all assumes you know how to set up HTML::Mason ("an elegant weapon, for a
+more civilized age"). If you don't, Google, CPAN, or
 https://masonbook.houseabsolute.com/book/ will get you started.
 
 **Next Steps**

@@ -20,7 +20,9 @@ development tool).
 
 **Notes**
 
-I assume you know how to set up HTML::Mason. If you don't, Google, CPAN, or https://masonbook.houseabsolute.com/book/ will get you started.
+This assumes you know how to set up HTML::Mason ("an elegant weapon, for a more
+civilised age"). If you don't, Google, CPAN, or
+https://masonbook.houseabsolute.com/book/ will get you started.
 
 **Next Steps**
 

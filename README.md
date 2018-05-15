@@ -2,7 +2,12 @@
 
 WFMU, my favourite radio station, has a fantastic rolling archive (http://www.wfmu.org/table).
 
-I wanted to be able to use iTunes (this will also work with other podcatchers) to automatically download recent archives of my favourite shows for offline listening. I realized that they publish RSS feeds for the archives; and thus, the XML from their RSS feeds could be transformed into the XML for a podcast using a simple web app (HTML::Mason was my then-favourite web app development tool).
+I wanted to be able to use iTunes to automatically download recent archives of
+my favourite shows for offline listening (this will also work with other
+podcatchers). I realized that they publish RSS feeds for the archives; and
+thus, the XML from their RSS feeds could be transformed into the XML for a
+podcast using a simple web app (HTML::Mason was my then-favourite web app
+development tool).
 
 **Here's how it works:**
 

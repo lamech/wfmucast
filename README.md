@@ -8,6 +8,8 @@ podcatchers). I realized that they publish RSS feeds for the archives; and
 thus, the XML from their RSS feeds could be transformed into the XML for a
 podcast using a simple web app.
 
+I wrote this ten years ago (2008) and it still works just fine.
+
 **Here's how it works:**
 
 * Run this code somewhere; e.g. http://example.com/wfmucast

@@ -22,4 +22,6 @@ development tool).
 
 I assume you know how to set up HTML::Mason. If you don't, Google, CPAN, or https://masonbook.houseabsolute.com/book/ will get you started.
 
+**Next Steps**
 
+Redo the whole thing in something more respectably modern (Node.js?), with proper tests.
